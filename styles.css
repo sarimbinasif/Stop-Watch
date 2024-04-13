@@ -1,31 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(155, 191, 73);
 }
 
-.heading{
+.heading {
     text-align: center;
     margin: 20px;
     color: rgb(50, 93, 79);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
 
 .timerButton {
     width: 80px;
     height: 40px;
     margin: 20px;
-    background-color: #656060; 
-    border-radius: 25px; 
-    border: 2px solid rgb(50, 93, 79); 
-    color: #fff; 
+    background-color: #656060;
+    border-radius: 25px;
+    border: 2px solid rgb(50, 93, 79);
+    color: #fff;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    transition: all 0.3s ease; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
 }
 
 .timerButton:hover {
@@ -33,17 +32,32 @@ body{
 }
 
 #timeDisplay {
-    font-size: 5vw; 
+    font-size: 5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(155, 191, 73);
 }
 
 #timeContainer {
     text-align: center;
-    border: 3px solid #333; 
+    border: 3px solid #333;
     border-radius: 25px;
     background-color: #666;
-    padding: 15px; 
-    margin: 20px auto; 
-    max-width: 400px; 
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: 1.5em;
+    }
+
+    #timeDisplay {
+        font-size: 3vw;
+    }
+
+    #timeContainer {
+        max-width: 300px;
+    }
 }
